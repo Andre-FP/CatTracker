@@ -1,0 +1,31 @@
+PASSO A PASSO PARA TREINAMENTO DO MODELO 
+(versão mais detalhada - e com imagens - pode ser vista no Relatório)
+
+> Acessar o link para abrir o notebook do Colab: (primeiro acesso)
+  https://colab.research.google.com/drive/1kc9BI2alKGwVU_eJV442AeuFSVS_7h2c?usp=drive_link
+  * É recomendável que seja salva uma cópia do Notebook (File > Save a copy in...) em sua própria conta no Google Drive ou no GitHub (a partir daí, acesse apenas por seu próprio link)
+
+> Caso a conexão não inicie automaticamente, clicar em “Connect”.
+ 
+> Rodar o primeiro bloco de código da seção “1 - Setup”. Este bloco irá clonar o repositório GitHub, instalar dependências e fazer a verificação do PyTorch e da GPU.
+ 
+> Fazer o upload da pasta zipada com os arquivos de treinamento (“cattracker-train-data.zip”) para o Colab. 
+  * Dependendo do tamanho dos arquivos de treinamento e da taxa de upload da Internet, esse processo pode demorar muito tempo, a ponto do Colab se desconectar por “tempo de inatividade”. 
+    Nesse caso, é necessário rodar o bloco de código da seção “Keep-alive Script” enquanto o upload está ocorrendo.
+ 
+> Após o upload, rodar o segundo bloco de código da seção “1 - Setup”. Este bloco irá descompactar a pasta com os dados de treinamento. 
+ 
+> Na seção “2 - Train”, rodar o bloco de código de treinamento. 
+ 
+> O arquivo de treinamento (“last.pt”) estará salvo no caminho: 
+  ‘yolov5/runs/train/exp[X]/weights/last.pt’. 
+
+> Fazer o upload do arquivo de vídeo (“video-test-cats.mp4”) a ser utilizado no teste do modelo. 
+  * O bloco de código da seção “Keep-alive Script” poderá ser usado novamente neste momento.
+
+> Na seção “3 - Detect”, executar o bloco de código de detecção. 
+  * Atentar-se ao local do arquivo de treinamento e ao local e nome do arquivo de teste (“video-test-cats.mp4”).
+ 
+> O arquivo com as detecções (“video-test-cats.mp4”) estará salvo no caminho: 
+  ‘yolov5/runs/detect/exp[X]/video-test-cats.mp4’.
+  * O bloco de código da seção “Keep-alive Script” poderá ser usado novamente neste momento.
