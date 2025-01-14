@@ -2,8 +2,13 @@ import telebot
 import os
 from choose_picture import choose_picture
 from seta import *
+from dotenv import load_dotenv
+import os
 
-TOKEN = '6646406153:AAF6YOTeoqBKuBP--6vszBwr5GXSrPnx7ss'
+load_dotenv()
+
+# Acessa a variável de ambiente
+TOKEN = os.getenv('MY_SECRET_KEY')
 
 bot = telebot.TeleBot(TOKEN)
 
