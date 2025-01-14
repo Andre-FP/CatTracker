@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  telegram_service:
+    build:
+      context: ./telegram
+    volumes:
+      - ./yolov5:/app/yolov5
+
+  yolov5_service:
+    build:
+      context: ./yolov5
+    volumes:
+      - ./yolov5:/app
