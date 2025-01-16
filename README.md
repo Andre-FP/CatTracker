@@ -1,6 +1,6 @@
 # CatTracker
 
-The project aims to detect cats inside a house using cameras and inform the owner via cell phone. The objective is to allow the owner to know where the cat is, especially if it likes to hide when you are looking for it. 
+The project aims to detect cats inside a house using cameras and inform the owner via cell phone. The objective is to allow the owner to know where the cat is, especially if it likes to hide when you are looking for it.  
 
 ![SchematicCatTracker](images-demo/SchematicCatTracker.JPG)
 
